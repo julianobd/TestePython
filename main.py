@@ -8,6 +8,7 @@ import os
 app = FastAPI()
 
 SECRET_KEY = os.environ.get("SECRET")
+print("Secret: " + SECRET_KEY)
 ALGORITHM = "HS256"
 
 class Token(BaseModel):
@@ -43,7 +44,7 @@ class JWTBearer(HTTPBearer):
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 jwt_bearer = JWTBearer(secret_key=SECRET_KEY)
 
-@app.post("/token", response_model=Token)
+@app.post("/Token", response_model=Token)
 async def Login(login: LoginInput):
     # não fiz implementação de onde validará.. então.. tanto faz as credenciais..
     payload = {"sub": login.username}

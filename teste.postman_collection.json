@@ -99,13 +99,13 @@
 			"response": []
 		},
 		{
-			"name": "http://127.0.0.1:80/ReverseIntegers Copy",
+			"name": "http://127.0.0.1:80/Token",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"sentence\": \"We are really pleased to meet you in our city\"}",
+					"raw": "{\"username\": \"asd\", \"password\": \"asd\"}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -113,7 +113,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:80/AverageWordsLength",
+					"raw": "http://127.0.0.1:80/Token",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -123,7 +123,7 @@
 					],
 					"port": "80",
 					"path": [
-						"AverageWordsLength"
+						"Token"
 					]
 				}
 			},
