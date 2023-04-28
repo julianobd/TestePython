@@ -3,10 +3,11 @@ from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 import re
+import os
 
 app = FastAPI()
 
-SECRET_KEY = "mysecretkey"
+SECRET_KEY = os.environ.get("SECRET")
 ALGORITHM = "HS256"
 
 class Token(BaseModel):
