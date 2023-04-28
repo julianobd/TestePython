@@ -8,7 +8,6 @@ import os
 app = FastAPI()
 
 SECRET_KEY = os.environ.get("SECRET")
-print("Secret: " + SECRET_KEY)
 ALGORITHM = "HS256"
 
 class Token(BaseModel):
