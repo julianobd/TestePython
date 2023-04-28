@@ -8,6 +8,16 @@
 		{
 			"name": "http://127.0.0.1:80/MatchedMismatchedWords",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2QifQ.bkpR2IFIsKDuO06Y_DAOipSGG6Hdfl_OWCwothzT5kw",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -39,6 +49,16 @@
 		{
 			"name": "http://127.0.0.1:80/AverageWordsLength",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2QifQ.bkpR2IFIsKDuO06Y_DAOipSGG6Hdfl_OWCwothzT5kw",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -70,6 +90,16 @@
 		{
 			"name": "http://127.0.0.1:80/ReverseIntegers",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2QifQ.bkpR2IFIsKDuO06Y_DAOipSGG6Hdfl_OWCwothzT5kw",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
